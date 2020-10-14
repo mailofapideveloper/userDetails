@@ -5,7 +5,7 @@
             <l7:Name>userDetails</l7:Name>
             <l7:Id>17cf448851519e844102a9699eda2d06</l7:Id>
             <l7:Type>SERVICE</l7:Type>
-            <l7:TimeStamp>2020-10-14T13:39:20.575-05:00</l7:TimeStamp>
+            <l7:TimeStamp>2020-10-14T16:33:11.328-05:00</l7:TimeStamp>
             <l7:Resource>
                 <l7:Service id="17cf448851519e844102a9699eda2d06" version="2">
                     <l7:ServiceDetail folderId="17cf448851519e844102a9699eda3538" id="17cf448851519e844102a9699eda2d06" version="2">
@@ -24,7 +24,7 @@
                                 <l7:BooleanValue>false</l7:BooleanValue>
                             </l7:Property>
                             <l7:Property key="policyRevision">
-                                <l7:LongValue>11</l7:LongValue>
+                                <l7:LongValue>12</l7:LongValue>
                             </l7:Property>
                             <l7:Property key="soap">
                                 <l7:BooleanValue>false</l7:BooleanValue>
@@ -39,7 +39,7 @@
                     </l7:ServiceDetail>
                     <l7:Resources>
                         <l7:ResourceSet tag="policy">
-                            <l7:Resource type="policy" version="10">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                            <l7:Resource type="policy" version="11">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
     &lt;wsp:All wsp:Usage="Required"&gt;
         &lt;L7p:AuditAssertion&gt;
@@ -155,6 +155,10 @@
                     &lt;L7p:EarlyResponse booleanValue="true"/&gt;
                     &lt;L7p:ResponseContentType stringValue="application/json; charset=UTF-8"/&gt;
                 &lt;/L7p:HardcodedResponse&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="Request Processed Sucessfully"/&gt;
+                    &lt;L7p:Level stringValue="WARNING"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
             &lt;/wsp:All&gt;
             &lt;wsp:All wsp:Usage="Required"&gt;
                 &lt;L7p:HardcodedResponse&gt;
